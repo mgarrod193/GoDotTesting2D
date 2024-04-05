@@ -46,7 +46,7 @@ func _process(delta):
 		$AnimatedSprite2D.flip_v = velocity.y > 0
 
 
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	hide() #hides player model upon collision
 	hit.emit() #emits hit signal
 	#turn off players hitbox to prevent continious hits deferred causes enginge to wait till its safe to disable
